@@ -67,10 +67,13 @@
                 </div>
             </div>
         </form>
-        `;
+        `
             attention.custom({
                 title: 'Choose your dates',
                 msg: html,
+                callback: function(result) {
+                    console.log('called')
+                }
             });
         })
     </script>
